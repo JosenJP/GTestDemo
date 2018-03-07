@@ -14,5 +14,6 @@ TEST(CMethodTest, Less)
 
 TEST(CMethodTest, Equal)
 {
+    //This Case will fail
     EXPECT_FALSE(IsGreater(2, 1));
 }
