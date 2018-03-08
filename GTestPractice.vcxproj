@@ -121,11 +121,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClassTest.cpp" />
+    <ClCompile Include="ClassTestUT.cpp" />
     <ClCompile Include="CMethod.cpp" />
     <ClCompile Include="CMethodTest.cpp" />
     <ClCompile Include="GTestPractice.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassTest.h" />
     <ClInclude Include="CMethod.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
