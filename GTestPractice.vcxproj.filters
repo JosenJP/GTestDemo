@@ -13,12 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="UintTest">
+      <UniqueIdentifier>{537713ef-9da9-48f3-84b7-c0f738885703}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMethod.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="CMethodTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GTestPractice.cpp">
@@ -27,8 +27,17 @@
     <ClCompile Include="ClassTest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ClassTestUT.cpp">
+    <ClCompile Include="CParam.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CMethodUT.cpp">
+      <Filter>UintTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassTestUT.cpp">
+      <Filter>UintTest</Filter>
+    </ClCompile>
+    <ClCompile Include="ParamUT.cpp">
+      <Filter>UintTest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +45,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ClassTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CParam.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
