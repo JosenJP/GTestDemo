@@ -39,6 +39,12 @@
     <ClCompile Include="ParamUT.cpp">
       <Filter>UintTest</Filter>
     </ClCompile>
+    <ClCompile Include="ClassA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MockA.cpp">
+      <Filter>UintTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMethod.h">
@@ -48,6 +54,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MockA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

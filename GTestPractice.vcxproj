@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>H:\OpenSource\googletest\googletest\include;$(IncludePath)</IncludePath>
-    <LibraryPath>H:\OpenSource\googletest\googletest\msvc\2010\gtest\x64-Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>H:\OpenSource\googletest\googlemock\include;H:\OpenSource\googletest\googletest\include;$(IncludePath)</IncludePath>
+    <LibraryPath>H:\OpenSource\googletest\googlemock\msvc\2015\x64-Debug;H:\OpenSource\googletest\googletest\msvc\2010\gtest\x64-Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>H:\OpenSource\googletest\googletest\include;$(IncludePath)</IncludePath>
@@ -91,7 +91,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>gmock.lib;gtestd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,18 +121,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClassA.cpp" />
     <ClCompile Include="ClassTest.cpp" />
     <ClCompile Include="ClassTestUT.cpp" />
     <ClCompile Include="CMethod.cpp" />
     <ClCompile Include="CMethodUT.cpp" />
     <ClCompile Include="CParam.cpp" />
     <ClCompile Include="GTestPractice.cpp" />
+    <ClCompile Include="MockA.cpp" />
     <ClCompile Include="ParamUT.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClassA.h" />
     <ClInclude Include="ClassTest.h" />
     <ClInclude Include="CMethod.h" />
     <ClInclude Include="CParam.h" />
+    <ClInclude Include="MockA.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
